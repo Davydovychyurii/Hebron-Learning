@@ -1,0 +1,111 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+/* :root {
+  --bg-color--dark: #0a1223;
+  --bg-color--light: #fff;
+  --link: #5d5d5d;
+  --link--active: #54597d;
+  --link--hover: #54597d;
+  --article-title: #ddd;
+  --article-title--dark: #000;
+  --thumbnail--description: #5d5d5d; */
+
+/* These styles are needed only for media query max-width: 575px */
+
+/* The 'Up' button (circle button at right bottom corner) */
+/* --btn-color: #fff;
+  --btn-bg-color: #5ebcff;
+
+  --navigation-border-bottom: #ddd;
+  --thumbnail-title: #484747;
+} */
+
+
+:root {
+  --bg-color--dark: #0a1223;
+  --bg-color--light: #fff;
+  --link: #5d5d5d;
+  --link--active: #54597d;
+  --link--hover: #54597d;
+  --article-title: #ddd;
+  --article-title--dark: #000;
+  --thumbnail--description: #5d5d5d;
+}
+
+body {
+  background-color: var(--bg-color--dark);
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.active {
+  color: var(--link--active);
+}
+
+a:hover {
+  color: var(--link--hover);
+}
+
+h1 {
+  text-align: center;
+  color: var(--article-title);
+  font-size: 50px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+article {
+  width: 50%;
+}
+
+
+h2 {
+  background: linear-gradient(to right, #ffffff, #d6d6d6, #aeaeae, #888888, #646464);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+p {
+  color: var(--thumbnail--description);
+  text-align: justify;
+}
+
+.img-box {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 200px;
+  width: 400px;
+}
+
+section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
