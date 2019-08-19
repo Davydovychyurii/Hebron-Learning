@@ -45,32 +45,46 @@ body {
   animation-direction: normal;
   top: 20px;
   left: 20px;
-
-
 }
 
-#ant2 {}
+#ant2 {
+  position: absolute;
+  animation: ant-2-animation 5s ease infinite;
+  animation-direction: normal;
+  top: -30px;
+  left: 50px;
+}
 
-#ant3 {}
+#ant3 {
+  position: absolute;
+  animation: ant-3-animation 4s ease infinite;
+  animation-direction: normal;
+  bottom: 0;
+  right: 10px;
+}
 
-#ant4 {}
+#ant4 {
+  position: absolute;
+  animation: ant-4-animation 5s ease infinite;
+  animation-direction: normal;
+  bottom: 80px;
+  right: 10px;
+}
 
 /* ANT-ANIMATIONS */
 /* ANT 1 */
 @keyframes ant-1-animation {
-  /* from {
-    top: 100px;
-  }
-
-  to {
-    bottom: 50px;
-  } */
 
   0% {
     top: 20px;
     left: 20px;
     transform: rotate(90deg);
-    animation-delay: 1s;
+
+  }
+
+  20% {
+
+    transform: rotate(90deg);
   }
 
   25% {
@@ -78,29 +92,122 @@ body {
     top: 20px;
     left: 150px;
     transform: rotate(-27deg);
-    animation-delay: 1s;
+
   }
 
+
+  45% {
+    transform: rotate(-27deg);
+  }
 
   50% {
     top: -60px;
     left: 90px;
     transform: rotate(190deg);
-    animation-delay: 1s;
 
+
+  }
+
+  70% {
+    transform: rotate(190deg);
   }
 
   75% {
     top: 150px;
     bottom: -120px;
     transform: rotate(0deg);
-    animation-delay: 1s;
 
   }
+
 }
 
 /* ANT 2 */
-@keyframes ant-2-animation {}
+@keyframes ant-2-animation {
+  0% {
+    transform: rotate(180deg);
+    top: -30px;
+    left: 50px;
+  }
+
+
+
+
+  50% {
+    transform: rotate(180deg);
+    left: 50px;
+    top: 90px;
+  }
+
+  55% {
+    transform: rotate(0deg);
+  }
+}
 
 /* ANT 3 */
-@keyframes ant-3-animation {}
+@keyframes ant-3-animation {
+  0% {
+    bottom: 0;
+    right: 10px;
+  }
+
+  5% {
+    transform: rotate(-40deg);
+  }
+
+  50% {
+    transform: rotate(-40deg);
+    bottom: 130px;
+    right: 130px;
+  }
+
+  55% {
+    transform: rotate(-220deg);
+  }
+
+  99% {
+    transform: rotate(-220deg);
+  }
+}
+
+@keyframes ant-4-animation {
+  0% {
+    bottom: 80px;
+    right: 10px;
+    transform: rotate(90deg);
+  }
+
+  5% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(90deg);
+    bottom: 80px;
+    right: -50px;
+  }
+
+  55% {
+    transform: rotate(-20deg);
+  }
+
+  75% {
+    bottom: 230px;
+    transform: rotate(-20deg);
+    right: -5px;
+  }
+
+  80% {
+    transform: rotate(200deg);
+
+  }
+
+  95% {
+    transform: rotate(200deg);
+
+  }
+
+  100% {
+    bottom: 80px;
+    right: 10px;
+  }
+}
