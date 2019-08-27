@@ -1,14 +1,15 @@
-let a = parseFloat(prompt('Введіть довжину сторони А'));
-let b = parseFloat(prompt('Введіть довжину сторони Б'));
-let c = parseFloat(prompt('Ввдедіть значення кута'));
+let firstSide = +(prompt('Введіть довжину сторони А'));
+let secondSide = +(prompt('Введіть довжину сторони Б'));
+let angle = +(prompt('Ввдедіть значення кута'));
 
-function lengthB(a, b, c) {
-    if (a <= 0 || b <= 0) {
+function lengthB(firstSide, secondSide, angle) {
+    const radian = 180;
+    if (firstSide <= 0 || secondSide <= 0) {
         return 'Invalid data'
     } else {
-        let side = Math.floor(Math.sqrt((Math.pow(a, 2) + Math.pow(b, 2)) - (2 * a * b * Math.cos(c * Math.PI / 180))) * 100) / 100;
-        let square = Math.round(1 / 2 * a * b * Math.sin(c * Math.PI / 180));
-        let perimeter = a + b + side;
+        let side = Math.floor(Math.sqrt((Math.pow(firstSide, 2) + Math.pow(secondSide, 2)) - (2 * firstSide * secondSide * Math.cos(angle * Math.PI / radian))) * 100) / 100;
+        let square = Math.round(1 / 2 * firstSide * secondSide * Math.sin(angle * Math.PI / radian));
+        let perimeter = firstSide + secondSide + side;
 
         return {
             triangleLengthC: side,
@@ -19,4 +20,4 @@ function lengthB(a, b, c) {
     }
 
 }
-console.log(lengthB(a, b, c))
+console.log(lengthB(firstSide, secondSide, angle))
