@@ -2,9 +2,9 @@
   "name": "hebron-learning",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ./"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Davydovychyurii/Hebron-Learning/issues"
   },
-  "homepage": "https://github.com/Davydovychyurii/Hebron-Learning#readme"
+  "homepage": "https://github.com/Davydovychyurii/Hebron-Learning#readme",
+  "devDependencies": {
+    "eslint": "^6.2.2"
+  }
 }
