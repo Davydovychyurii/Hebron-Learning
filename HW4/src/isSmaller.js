@@ -1,4 +1,4 @@
 function isSmaller(a, b) {
-    return a < b ? true : false;
+    return a < b;
 }
 console.log(isSmaller(5, -1));
