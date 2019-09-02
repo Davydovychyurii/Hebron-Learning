@@ -11,7 +11,6 @@ if (confirm("Do you want to play a game?")) {
             if (i == 3) {
                 continue;
             };
-            console.log(correctNumber);
             if (i == 5) {
                 let again = confirm(`
                 Total winning: ${totalPrize}
@@ -36,7 +35,6 @@ if (confirm("Do you want to play a game?")) {
             Total prize: ${totalPrize}$
             Possible prize on current attempts: ${Math.trunc(jackpot / i)}$`);
             attempts--;
-            console.log(correctNumber);
             if (userNumber == correctNumber) {
                 totalPrize += Math.trunc(jackpot / i);
                 let continueGame = confirm(`Congratulation!
